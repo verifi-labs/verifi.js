@@ -1,4 +1,4 @@
-import { Abi, BlockTag, PublicClient } from 'viem';
+import { Abi, BlockNumber, PublicClient } from 'viem';
 
 enum Choice {
   Against = 0,
@@ -64,7 +64,7 @@ export type Authenticator = {
 export type VotingPowerParameters = {
   strategyAddress: `0x${string}`;
   voterAddress: `0x${string}`;
-  block: BlockTag;
+  block: BlockNumber;
   publicClient: PublicClient;
   metadata?: Record<string, any> | null;
   params?: string;

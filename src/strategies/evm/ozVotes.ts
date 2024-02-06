@@ -22,7 +22,7 @@ export default function createOzVotesStrategy(): Strategy {
       });
 
       const votingPower = await compContract.read.getVotes([voterAddress], {
-        blockTag: block
+        blockNumber: block
       });
 
       return BigInt(votingPower.toString());

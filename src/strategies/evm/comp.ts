@@ -23,7 +23,7 @@ export default function createCompStrategy(): Strategy {
 
       const votingPower = await compContract.read.getCurrentVotes(
         [voterAddress],
-        { blockTag: block }
+        { blockNumber: block }
       );
 
       return BigInt(votingPower.toString());
