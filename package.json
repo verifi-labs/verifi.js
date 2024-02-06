@@ -1,6 +1,6 @@
 {
   "name": "@verifi/verifi.js",
-  "version": "0.1.1-alpha.1",
+  "version": "0.1.1-alpha.2",
   "license": "MIT",
   "main": "dist.cjs/index.js",
   "module": "dist/index.js",
@@ -36,8 +36,7 @@
     "randombytes": "^2.1.0",
     "snake-case": "^3.0.4",
     "starknet": "5.25.0",
-    "viem": "^1.21.1",
-    "wagmi": "^1.4.7"
+    "viem": "^1.21.1"
   },
   "devDependencies": {
     "@ethersproject/units": "^5.7.0",
